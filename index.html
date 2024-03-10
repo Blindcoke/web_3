@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Завдання №3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .footer {
+            width: 100%;
+            padding: 20px 0;
+
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            padding: 20px;
+
+        }
+        .course-info {
+            display: flex;
+            align-items: left;
+            margin-bottom: 20px;
+        }
+        .course-info img {
+            margin-right: 20px;
+        }
+        .course-description {
+            text-align: left;
+        }
+        .similar-courses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            border-bottom: 1px solid #ccc; 
+        }
+        .similar-course {
+            width: 200px;
+            padding: 10px;
+        }
+        .sale{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .price {
+            color: blue;
+            text-decoration: line-through;
+            font-size: 15px;
+        }
+        .discounted-price {
+            color: orange;
+            font-size: 24px;
+        }
+
+        .economy {
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .hurry {
+            color: orange;
+        }
+
+        .discribe {
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;   
+            color: gray;
+        }
+        .benefits p {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;   
+            color: gray;
+        }
+        .buy-button {
+            background-color: red;
+            color: white;
+            font-size: large;
+            width: 300px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .info {
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;   
+            color: gray;
+        }
+        .full-price {
+            text-decoration: line-through;
+            font-size: 15px;
+        }
+        .disc-price {
+            color: blue;
+            font-size: 15px;
+        }
+        .buy {  
+            text-decoration: underline;
+        }
+        .contacts {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 550px;
+            margin-right: 550px;
+            flex-direction: row;
+        }
+        .contacts p{
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;   
+            color: gray;
+            border-bottom: 1px solid #ccc;
+        }
+        .extra-info p{
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;   
+            color: gray;
+            text-align: left;
+            
+        }
+
+        .lower-footer{
+            margin-left: 550px;
+            margin-right: 550px;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .info-l {
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;   
+            color: gray;
+            text-align: right;
+        }
+
+        .envelope {
+            padding-right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="course-info">
+                <img src="logo.png" alt="Course Image" height="600px" width="500px">
+                <div class="course-description">
+                    <h2>HTML і CSS: професійний курс
+                         <br>Частина 1</h2>
+                    <div class="sale"><p class="price">1190 грн</p>
+                        <p class="discounted-price">390 грн</p>
+                    </div>
+                    <p class="economy"><i class="fas fa-piggy-bank"></i>Ви економите 800 грн(67%)</p>
+                    <p class="hurry"><i class="fas fa-clock"></i>Покваптеся! Закінчується через 1 день<br> 12 год 38 хвилин</p>
+                    <p class="discribe">Відео запс курсу HTML та CSS. На цьому курсі<br>
+                        ви навчитеся робити справжні проекти,такі ж за<br>
+                        рівнем складності, які вимагаються на ринку працію<br>
+                        І будете робити їх правильно, щоб після навчання<br>
+                        видавати результат високого рівня!
+                    </p>
+                    <button class="buy-button">Купити-></button>
+                    <div class = "benefits">
+                        <p><i class="fas fa-money-bill"></i>Безпечні платежі</p>
+                        <p><i class="fas fa-shield"></i>Захист персональних даних</p>
+                        <p><i class="fas fa-fingerprint"></i>100% унікальні дані</p>
+                        <p><i class="fas fa-wallet"></i>Гарантія кращої ціни</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <h3 >Схожі товари</h3>
+            <div class="similar-courses">
+                <div class="similar-course">
+                    <img src="linux.png" alt="Course Image" height="200px" width="200px">
+                    <p class="info">Linux з нуля-відеокурс</p>
+                    <div class="sale"><p class="full-price">1190 грн </p>
+                        <p class="disc-price"> 390 грн</p>
+                    </div>
+                </div>
+                <div class="similar-course">
+                    <img src="windows.png" alt="Course Image" height="200px" width="200px">
+                    <p class="info">Linux з нуля-відеокурс</p>
+                    <div class="sale"><p class="full-price">790 грн </p>
+                        <p class="disc-price"> 290 грн</p>
+                    </div>
+                </div>
+                <div class="similar-course">
+                    <img src="angular.png" alt="Course Image" height="200px" width="200px">
+                    <p class="info">Linux з нуля-відеокурс</p>
+                    <div class="sale"><p class="full-price">1190 грн </p>
+                        <p class="disc-price"> 390 грн</p>
+                    </div>
+                </div>
+                <div class="similar-course">
+                    <img src="sys.png" alt="Course Image" height="200px" width="200px">
+                    <p class="info">Linux з нуля-відеокурс</p>
+                    <div class="sale">
+                        <p class="buy"> Купить</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts">
+                <p>Допомога</p>
+                <p>Зв'язатися з нами</p>
+                <p>Наші партнери</p>
+                <p>Безпечні платежі</p>
+            </div>
+            <div class="lower-footer">   
+                <div class="extra-info">   
+                    <p>Довідка</p>
+                    <p>конфіденційність</p>
+                    <p>Умови використання</p>
+                </div>
+                <p class="envelope"> <i class="fas fa-envelope"></i></p>
+                <div><img src = "post.png"></div>
+                <div>
+                    <div><img src = "pay.png" width="150px"></div>
+                    <p class="info-l">Всі операції на нашому<br> сайті безпечні<br> і проходять з використанням<br> шифрованого SSL</p>          
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
